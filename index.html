@@ -43,7 +43,7 @@
             </div>
             <div class="navbar-end gap-1">
                 <img src="./assets/coin.png" alt="">
-                <h4><span id="account-coin">5000</span> BDT</h4>
+                <h4><span id="balance">5000</span> BDT</h4>
             </div>
         </div>
     </header>
@@ -90,7 +90,7 @@
                             efforts and making a positive impact on the lives of those in need.</p>
                         <input class="input w-full my-5" type="text" placeholder="Write donation Amount" name=""
                             id="noakhali-amount"> <br>
-                        <button id="noakhali-btn" class="btn px-6 my-0 bg-green-300 w-full">Donate Now</button>
+                        <button onclick="handleDonation('noakhali-amount', 'noakhali-donation')" id="noakhali-btn" class="btn px-6 my-0 bg-green-300 w-full">Donate Now</button>
                     </div>
                 </div>
 
@@ -118,7 +118,7 @@
                             efforts and making a positive impact on the lives of those in need.</p>
                         <input class="input w-full my-5" type="text" placeholder="Write donation Amount" name=""
                             id="feni-amount"> <br>
-                        <button id="feni-btn" class="btn px-6 my-0 bg-green-300 w-full">Donate Now</button>
+                        <button onclick="handleDonation('feni-amount', 'feni-donation')" id="feni-btn" class="btn px-6 my-0 bg-green-300 w-full">Donate Now</button>
                     </div>
                 </div>
 
@@ -146,7 +146,7 @@
                             efforts and making a positive impact on the lives of those in need.</p>
                         <input class="input w-full my-5" type="text" placeholder="Write donation Amount" name=""
                             id="quota-amount"> <br>
-                        <button id="quota-btn" class="btn px-6 my-0 bg-green-300 w-full">Donate Now</button>
+                        <button onclick="handleDonation('quota-amount', 'quota-donation')" id="quota-btn" class="btn px-6 my-0 bg-green-300 w-full">Donate Now</button>
                     </div>
                 </div>
             </div>
@@ -160,6 +160,7 @@
 
     <script src="./scripts/route.js"></script>
     <script src="./scripts/utilities.js"></script>
+    <script src="./scripts/donation.js"></script>
 </body>
 
 </html>

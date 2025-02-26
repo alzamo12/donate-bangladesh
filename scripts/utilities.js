@@ -9,3 +9,15 @@ function handleSectionStyle(current, prev){
     current.style.display = "block";
     prev.style.display = "none";
 }
+
+function convertedValue(id){
+    const element = document.getElementById(id).value;
+    const convertedElement = parseInt(element);
+    return convertedElement
+}
+
+function convertedText(id){
+    const element = document.getElementById(id).innerText;
+    const conElement = parseInt(element);
+    return conElement;
+}
